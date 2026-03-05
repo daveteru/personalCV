@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+h1{
+    color: white;
+}
+
+hr{
+    border-width: 0,1px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.lora{
+    font-family: 'lora';
+}
+
+.axis1 {
+  font-variation-settings: 'wght' 750 'wdth' 100;
+}
