@@ -10,10 +10,9 @@ import Title from "./Title";
 
 export default function Home() {
   return (
-    <div className="relative w-screen h-auto bg-black px-5 box-border cursor-crosshair">
+    <div className="relative w-full h-auto bg-black px-5 box-border cursor-crosshair overflow-x-hidden">
       <Title />
       <Gridbg />
-      <div className="overflow-y-auto">
         <Hero />
         <About />
         <Skills />
@@ -21,7 +20,6 @@ export default function Home() {
         <Exp />
         <Testimonial/>
         <Contact/>
-      </div>
     </div>
   );
 }

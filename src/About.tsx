@@ -19,13 +19,19 @@ export default function About() {
             </button>
           </div>
           <p className="max-w-[600px] min-w-[300px] h-fit mb-5 font-light text-[12px] tracking-wide leading-5">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
-            suscipit reiciendis magni molestias provident enim earum error!
-            Optio expedita eveniet veniam corporis nemo. Quis facilis modi
-            laudantium sit sapiente ullam dolor incidunt nemo dolorum rem
-            ratione atque expedita enim dolorem quae accusamus amet labore,
-            nihil accusantium facere tenetur nam sunt adipisci eligendi.
-            Explicabo aspernatur quod fuga nobis nihil. Blanditiis provident
+            I started out as a graphic designer — obsessed with type, grids, and the
+            quiet logic of a well-composed layout. Over time, that obsession pushed me
+            past Figma and into code. Not because I wanted to become a developer, but
+            because I wanted to build exactly what I imagined without losing anything
+            in translation.
+            <br /><br />
+            Now I work at the intersection of both. I design systems that scale and
+            build interfaces that feel considered — from the motion of a button to the
+            architecture of a component library. I've shipped work for startups, agencies,
+            and large platforms like Grab, and I run an independent practice taking on
+            projects where design and engineering need to speak the same language.
+            <br /><br />
+            Based in Jakarta. Available for select freelance and collaborative work.
           </p>
         </div>
         <ul>

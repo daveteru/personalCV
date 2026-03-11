@@ -1,4 +1,5 @@
 import TestimonialContent1 from "./TestimonialContent1";
+import TestimonialContent2 from "./TestimonialContent2";
 
 export default function Testimonial() {
   return (
@@ -12,7 +13,7 @@ export default function Testimonial() {
         </span>
         <section className="grid grid-cols-2 w-[75%] h-100 gap-4">
           <TestimonialContent1 />
-          <TestimonialContent1 />
+          <TestimonialContent2 />
         </section>
       </div>
       <hr className="relative z-1 w-full border-t border-gray-500  mix-blend-difference" />

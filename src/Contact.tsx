@@ -9,28 +9,26 @@ export default function Contact() {
         <div className="flex gap-4">
           <div className="flex flex-col items-end gap-3 ">
             <h1 className="uppercase max-w-[400px] min-w-[300px]">
-              I design with intent and build with craft // visual designer
-              turned engineer. Still obsessed with the details
+              Got a project in mind? // Let's build something worth looking at
             </h1>
             <hr className="relative z-10 w-20 border-t border-white mix-blend-normal" />
             <p>BASED IN JAKARTA, INDONESIA</p>
-            <button className="bg-white w-fit py-1 px-3 rounded-full text-black hover:bg-blue-700 hover:text-white pointer-events-auto">
-              GET IN TOUCH
-            </button>
+            <p className="text-[11px] font-light">OPEN TO FREELANCE + COLLABORATION</p>
           </div>
           <p className="max-w-[600px] min-w-[300px] h-fit mb-5 font-light text-[12px] tracking-wide leading-5">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
-            suscipit reiciendis magni molestias provident enim earum error!
-            Optio expedita eveniet veniam corporis nemo. Quis facilis modi
-            laudantium sit sapiente ullam dolor incidunt nemo dolorum rem
-            ratione atque expedita enim dolorem quae accusamus amet labore,
-            nihil accusantium facere tenetur nam sunt adipisci eligendi.
-            Explicabo aspernatur quod fuga nobis nihil. Blanditiis provident
+            Whether you're a studio looking for a creative developer, a founder who needs
+            a product that actually looks the part, or a brand ready to take your digital
+            presence seriously — I'd like to hear about it. I take on a limited number of
+            projects at a time to give each one the attention it deserves.
+            <br /><br />
+            Fill out the form and I'll get back to you within 48 hours.
+            Alternatively, reach me directly at{" "}
+            <span className="underline pointer-events-auto">teru@email.com</span>.
           </p>
         </div>
         <form>
           <fieldset className="flex flex-col items-end gap-2">
-            <legend>SEND ME A MESSAGE:</legend>
+            <legend className="mb-2 text-[11px] tracking-widest">START A CONVERSATION</legend>
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -52,7 +50,7 @@ export default function Contact() {
               className="border rounded-md h-70 w-100 pointer-events-auto"
             ></textarea>
             <button className="bg-white w-fit py-1 px-3 rounded-full text-black hover:bg-blue-700 hover:text-white pointer-events-auto">
-              SEND INQUIRY
+              SEND MESSAGE →
             </button>
           </fieldset>
         </form>

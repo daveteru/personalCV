@@ -195,7 +195,7 @@ export default function PixelTrail({
         gl={glProps}
         className={`absolute z-1 ${className}`}
         eventSource={document.documentElement}
-        eventPrefix="offset"
+        eventPrefix="client"
         style={{
           ...(gooeyFilter ? { filter: `url(#${gooeyFilter.id})` } : {}),
           pointerEvents: 'none'

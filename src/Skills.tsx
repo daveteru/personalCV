@@ -9,7 +9,7 @@ export default function Skills() {
         <div className="flex flex-row gap-5 w-[70%] justify-between text-left">
         <section>
           <h1 className="font-bold mb-4">FRONT END DEVELOPMENT</h1>
-          <ul className="text-[12px] list-disc">
+          <ul className="text-[16px] list-disc">
             <li>REACT</li>
             <li>JAVASCRIPT + TYPESCRIPT </li>
             <li>WEBGL / OPENGL </li>
@@ -22,7 +22,7 @@ export default function Skills() {
         </section>
         <section>
           <h1 className="font-bold mb-4">BACK END DEVELOPMENT</h1>
-          <ul className="text-[12px] list-disc">
+          <ul className="text-[16px] list-disc">
             <li>VERCEL</li>
             <li>PYTHON</li>
             <li>EXPRESS.JS</li>
@@ -33,7 +33,7 @@ export default function Skills() {
         </section>
         <section>
           <h1 className="font-bold mb-4">VISUAL DESIGN</h1>
-          <ul className="text-[12px] list-disc">
+          <ul className="text-[16px] list-disc">
             <li>USER INTERFACE DESIGN</li>
             <li>UX DESIGN</li>
             <li>BRAND IDENTITY DESIGN</li>
