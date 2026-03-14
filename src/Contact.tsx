@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div>
-      <div className="relative z-5 flex flex-col items-end w-full  h-fit text-right text-white mix-blend-difference pointer-events-none mb-10 mt-5">
+      <div className="relative z-5 flex flex-col items-end w-full  h-fit text-right text-white md:mix-blend-difference pointer-events-none mb-10 mt-5">
         <p>
           <hr></hr>06
         </p>
@@ -55,7 +55,7 @@ export default function Contact() {
           </fieldset>
         </form>
       </div>
-      <hr className="relative z-1 w-full border-t border-gray-500  mix-blend-difference" />
+      <hr className="relative z-1 w-full border-t border-gray-500  md:mix-blend-difference" />
     </div>
   );
 }

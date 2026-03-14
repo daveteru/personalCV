@@ -21,7 +21,7 @@ export default function Title() {
   return (
     <div
       inert={hidden || undefined}
-      className={`sm:fixed relative top-5 z-15 sm:h-fit w-fit pointer-events-none mix-blend-difference transition-opacity duration-500 ${
+      className={`sm:fixed relative top-5 z-15 sm:h-fit w-fit pointer-events-none md:mix-blend-difference transition-opacity duration-500 ${
         hidden ? "opacity-0" : "opacity-100"
       }`}
     >

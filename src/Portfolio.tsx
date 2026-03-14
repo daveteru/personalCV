@@ -4,7 +4,7 @@ import { projects } from "./data/projects";
 
 export default function Portfolio() {
   return (
-    <div className="relative z-10 mix-blend-difference">
+    <div className="relative z-10 md:mix-blend-difference">
       <section className="flex flex-col w-full h-fit text-right text-white pointer-events-none mb-10 mt-5">
         <p className="ml-auto">
           <hr className="w-5"></hr>03
@@ -33,7 +33,7 @@ export default function Portfolio() {
           </Accordion>
         </div>
       </div>
-      <hr className="relative z-10 w-full border-t border-gray-500  mix-blend-difference" />
+      <hr className="relative z-10 w-full border-t border-gray-500  md:mix-blend-difference" />
     </div>
   );
 }
