@@ -193,7 +193,7 @@ export default function PixelTrail({
       <Canvas
         {...canvasProps}
         gl={glProps}
-        className={`absolute z-1 ${className}`}
+        className={`fixed z-1 ${className}`}
         eventSource={document.documentElement}
         eventPrefix="client"
         style={{

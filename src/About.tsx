@@ -5,9 +5,9 @@ export default function About() {
         <p>
           <hr></hr>01
         </p>
-        <span className="text-9xl font-extralight mb-4">ABOUT</span>
-        <div className="flex gap-4">
-          <div className="flex flex-col items-end gap-3 ">
+        <span className="w-full  md:w-[70%] text-7xl md:text-9xl font-extralight mb-4 ">ABOUT</span>
+        <div className="flex flex-col lg:flex-row gap-4">
+          <div className="flex flex-col items-end gap-3 mb-10">
             <h1 className="uppercase max-w-[400px] min-w-[300px]">
               I design with intent and build with craft // visual designer
               turned engineer. Still obsessed with the details
@@ -18,7 +18,7 @@ export default function About() {
               GET IN TOUCH
             </button>
           </div>
-          <p className="max-w-[600px] min-w-[300px] h-fit mb-5 font-light text-[12px] tracking-wide leading-5">
+          <p className="max-w-[550px] min-w-[300px] h-fit mb-5 font-light text-[16px] tracking-wide leading-6">
             I started out as a graphic designer — obsessed with type, grids, and the
             quiet logic of a well-composed layout. Over time, that obsession pushed me
             past Figma and into code. Not because I wanted to become a developer, but
@@ -34,7 +34,8 @@ export default function About() {
             Based in Jakarta. Available for select freelance and collaborative work.
           </p>
         </div>
-        <ul>
+        <hr className="border-white w-[15px]"></hr>
+        <ul className="mt-5">
           <li>JAVASCRIPT + TYPESCRIPT </li>
           <li>FRONT END DEVELOPMENT</li>
           <li>BACKEND END DEVELOPMENT</li>

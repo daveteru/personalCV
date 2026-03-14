@@ -1,8 +1,6 @@
 import { Accordion, AccordionItem } from "@heroui/accordion";
-import Project1 from "./Project1";
-import Project2 from "./Project2";
-import Project3 from "./Project3";
-import Project4 from "./Project4";
+import ProjectCard from "./Project1";
+import { projects } from "./data/projects";
 
 export default function Portfolio() {
   return (
@@ -11,69 +9,29 @@ export default function Portfolio() {
         <p className="ml-auto">
           <hr className="w-5"></hr>03
         </p>
-        <span className="text-9xl font-extralight mb-4">PORTFOLIO</span>
+        <span className=" text-7xl md:text-9xl font-extralight mb-4">PORTFOLIO</span>
       </section>
       <div>
-        <div className="w-[60%] ml-auto text-right flex justify-end text-white mb-10">
-            <Accordion selectionMode="multiple">
+        <div className="w-full ml-auto text-right flex justify-end text-white mb-10">
+          <Accordion selectionMode="multiple">
+            {projects.map((project) => (
               <AccordionItem
-                key="1"
-                aria-label="Accordion 1"
-                title={<>E-COMMERCE WEBSITE FOR <span className="font-[Cardo] italic">Masshiro & Co.</span></>}
+                key={project.id}
+                aria-label={project.title}
+                title={project.accordionTitle}
                 classNames={{
                   base: "!bg-transparent",
                   trigger: "flex-row-reverse justify-end !bg-transparent",
                   title:
-                    "text-right text-5xl font-light font-[Inter] items-center my-3",
+                    "!flex-none text-right text-3xl md:text-5xl font-light font-[Inter] items-center my-3",
                   indicator: "data-[open=true]:rotate-270 transition-transform",
                 }}
               >
-               <Project1/>
+                <ProjectCard {...project} />
               </AccordionItem>
-              <AccordionItem
-                key="2"
-                aria-label="Accordion 1"
-                title={<><span className="font-[Cardo] italic">Pt.Arundaya</span> COMPANY PROFILE UPDATE</>}
-                classNames={{
-                  base: "!bg-transparent",
-                  trigger: "flex-row-reverse justify-end !bg-transparent",
-                  title:
-                    "!flex-none text-right text-5xl font-light items-center my-3",
-                  indicator: "data-[open=true]:rotate-270 transition-transform",
-                }}
-              >
-               <Project2/>
-              </AccordionItem>
-              <AccordionItem
-                key="3"
-                aria-label="Accordion 1"
-                title={<>INTERACTIVE USER ONBOARDING @ <span className="font-[Cardo] italic">Grab Indonesia</span></>}
-                classNames={{
-                  base: "!bg-transparent",
-                  trigger: "flex-row-reverse justify-end !bg-transparent",
-                  title:
-                    "!flex-none text-right text-5xl font-light font-[inter] items-center my-3",
-                  indicator: "data-[open=true]:rotate-270 transition-transform",
-                }}
-              >
-               <Project3/>
-              </AccordionItem>
-              <AccordionItem
-                key="4"
-                aria-label="Accordion 1"
-                title="DYNAMIC 3D GLOBE"
-                classNames={{
-                  base: "!bg-transparent",
-                  trigger: "flex-row-reverse justify-end !bg-transparent",
-                  title:
-                    "!flex-none text-right text-5xl font-light font-[inter] items-center my-3",
-                  indicator: "data-[open=true]:rotate-270 transition-transform",
-                }}
-              >
-               <Project4/>
-              </AccordionItem>
-            </Accordion>
-          </div>
+            ))}
+          </Accordion>
+        </div>
       </div>
       <hr className="relative z-10 w-full border-t border-gray-500  mix-blend-difference" />
     </div>

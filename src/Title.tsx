@@ -1,6 +1,30 @@
+import { useState, useEffect } from "react";
+
 export default function Title() {
+  const [scrollY, setScrollY] = useState(0);
+  const [isMd, setIsMd] = useState(window.innerWidth >= 768);
+
+  useEffect(() => {
+    const onScroll = () => setScrollY(window.scrollY);
+    const onResize = () => setIsMd(window.innerWidth >= 768);
+
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
+
+  const hidden = isMd && scrollY >= 2000;
+
   return (
-    <div className="sm:fixed relative top-5 left-5 z-15 sm:h-fit w-fit pointer-events-none mix-blend-difference ">
+    <div
+      inert={hidden || undefined}
+      className={`sm:fixed relative top-5 z-15 sm:h-fit w-fit pointer-events-none mix-blend-difference transition-opacity duration-500 ${
+        hidden ? "opacity-0" : "opacity-100"
+      }`}
+    >
       <h1 className="text-6xl flex flex-wrap h-fit w-[50px] ">
         DAVID <span >'TERU'</span> SUDIONO
       </h1>

@@ -8,10 +8,10 @@ export default function Testimonial() {
         <p>
           <hr></hr>05
         </p>
-        <span className="text-9xl font-extralight mb-4">
+        <span className="text-5xl md:text-8xl font-extralight mb-4">
           TESTIMONIALS
         </span>
-        <section className="grid grid-cols-2 w-[75%] h-100 gap-4">
+        <section className="grid lg:grid-cols-2 md:w-[75%] h-fit gap-4">
           <TestimonialContent1 />
           <TestimonialContent2 />
         </section>

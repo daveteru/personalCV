@@ -5,11 +5,11 @@ export default function Skills() {
         <p>
           <hr></hr>02
         </p>
-        <span className="text-9xl font-extralight mb-4">SKILLS</span>
-        <div className="flex flex-row gap-5 w-[70%] justify-between text-left">
+        <span className="text-7xl md:text-9xl font-extralight mb-4">SKILLS</span>
+        <div className="flex flex-col md:flex-row gap-10 w-full lg:w-[70%]  md:justify-between  md:text-left">
         <section>
           <h1 className="font-bold mb-4">FRONT END DEVELOPMENT</h1>
-          <ul className="text-[16px] list-disc">
+          <ul className="text-[16px] md:list-disc md:translate-x-5">
             <li>REACT</li>
             <li>JAVASCRIPT + TYPESCRIPT </li>
             <li>WEBGL / OPENGL </li>
@@ -22,7 +22,7 @@ export default function Skills() {
         </section>
         <section>
           <h1 className="font-bold mb-4">BACK END DEVELOPMENT</h1>
-          <ul className="text-[16px] list-disc">
+          <ul className="text-[16px] md:list-disc md:translate-x-5">
             <li>VERCEL</li>
             <li>PYTHON</li>
             <li>EXPRESS.JS</li>
@@ -32,13 +32,13 @@ export default function Skills() {
           </ul>
         </section>
         <section>
-          <h1 className="font-bold mb-4">VISUAL DESIGN</h1>
-          <ul className="text-[16px] list-disc">
+          <h1 className="font-bold mb-4 md:-translate-x-5">VISUAL DESIGN</h1>
+          <ul className="text-[16px] md:list-disc  text-wrap  ">
             <li>USER INTERFACE DESIGN</li>
             <li>UX DESIGN</li>
             <li>BRAND IDENTITY DESIGN</li>
-            <li>3D MODEL - BLENDER / SPLINE</li>
-            <li>MOTION - AFTER EFFECTS / CHIVALRY</li>
+            <li>3D MODEL</li>
+            <li>MOTION DESIGN</li>
             <li>LOTTIE</li>
             <li>ADOBE CREATIVE SUITE</li>
             <li>FIGMA</li>

@@ -1,13 +1,13 @@
 export default function Contact() {
   return (
     <div>
-      <div className="relative z-5 flex flex-col items-end w-full h-fit text-right text-white mix-blend-difference pointer-events-none mb-10 mt-5">
+      <div className="relative z-5 flex flex-col items-end w-full  h-fit text-right text-white mix-blend-difference pointer-events-none mb-10 mt-5">
         <p>
           <hr></hr>06
         </p>
-        <span className="text-9xl font-extralight mb-4">CONTACT</span>
-        <div className="flex gap-4">
-          <div className="flex flex-col items-end gap-3 ">
+        <span className="text-7xl md:text-9xl font-extralight mb-4">CONTACT</span>
+        <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col items-end gap-3 mb-10">
             <h1 className="uppercase max-w-[400px] min-w-[300px]">
               Got a project in mind? // Let's build something worth looking at
             </h1>
@@ -26,28 +26,28 @@ export default function Contact() {
             <span className="underline pointer-events-auto">teru@email.com</span>.
           </p>
         </div>
-        <form>
-          <fieldset className="flex flex-col items-end gap-2">
+        <form className="w-full flex justify-end">
+          <fieldset className="flex flex-col  w-full md:w-100 items-end gap-2">
             <legend className="mb-2 text-[11px] tracking-widest">START A CONVERSATION</legend>
             <label htmlFor="name">Name:</label>
             <input
               type="text"
               id="name"
               name="name"
-              className="border rounded-md h-10 w-100 pointer-events-auto"
+              className="border rounded-md h-10 w-full pointer-events-auto"
             ></input>
             <label htmlFor="email">Email:</label>
             <input
               type="email"
               id="email"
               name="email"
-              className="border rounded-md h-10 w-100 pointer-events-auto"
+              className="border rounded-md h-10 w-full pointer-events-auto"
             ></input>
             <label htmlFor="message">Message:</label>
             <textarea
               id="message"
               name="message"
-              className="border rounded-md h-70 w-100 pointer-events-auto"
+              className="border rounded-md h-70 w-full pointer-events-auto"
             ></textarea>
             <button className="bg-white w-fit py-1 px-3 rounded-full text-black hover:bg-blue-700 hover:text-white pointer-events-auto">
               SEND MESSAGE →
