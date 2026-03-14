@@ -8,7 +8,7 @@ import Home from "./Home";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <HashRouter>
-      <HeroUIProvider>
+      <HeroUIProvider className="dark">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
