@@ -3,7 +3,7 @@ import type { ProjectData } from "./data/projects";
 export default function ProjectCard({ title, intro, task, action, result, metrics }: ProjectData) {
   return (
     <div>
-      <div className="ml-auto gap-2 lg:w-[70%] flex flex-col py-5">
+      <div className="ml-auto gap-2 lg:w-[50%] flex flex-col py-5">
         <div className="h-100 w-full  bg-gray-100"></div>
         <div className="flex flex-col gap-8 my-8">
           <h1 className="font-bold text-left">{title}</h1>

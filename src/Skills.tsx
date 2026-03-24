@@ -6,7 +6,7 @@ export default function Skills() {
           <hr></hr>02
         </p>
         <span className="text-7xl md:text-9xl font-extralight mb-4">SKILLS</span>
-        <div className="flex flex-col md:flex-row gap-10 w-full lg:w-[70%]  md:justify-between  md:text-left">
+        <div className="flex flex-col md:flex-row gap-5 w-full lg:w-[50%]  md:justify-between  md:text-left">
         <section>
           <h1 className="font-bold mb-4">FRONT END DEVELOPMENT</h1>
           <ul className="text-[16px] md:list-disc md:translate-x-5">

@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
+import { useRef } from "react";
+
+gsap.registerPlugin(useGSAP, SplitText);
 
 export default function Title() {
+  const container = useRef<HTMLHeadingElement>(null);
   const [scrollY, setScrollY] = useState(0);
   const [isMd, setIsMd] = useState(window.innerWidth >= 768);
 
@@ -16,6 +23,21 @@ export default function Title() {
     };
   }, []);
 
+  useGSAP(() => {
+    SplitText.create(".splittext", {
+      type: "words,chars",
+      onSplit(self) {
+        return gsap.from(self.chars, {
+          opacity: 0,
+          y: 40,
+          stagger: 0.03,
+          duration: 0.6,
+          ease: "back.out(1.7)",
+        });
+      },
+    });
+  });
+
   const hidden = isMd && scrollY >= 2000;
 
   return (
@@ -25,8 +47,11 @@ export default function Title() {
         hidden ? "opacity-0" : "opacity-100"
       }`}
     >
-      <h1 className="text-6xl flex flex-wrap h-fit w-[50px] ">
-        DAVID <span >'TERU'</span> SUDIONO
+      <h1
+        className="text-6xl flex flex-wrap h-fit w-70 splittext "
+        ref={container}
+      >
+        DAVID TERU SUDIONO
       </h1>
       <p className="h-fit w-[300px] flex flex-wrap text-white">
         INDEPENDENT UI DESIGNER & FULL STACK DEVELOPER SPECIALIZING IN
@@ -44,27 +69,13 @@ export default function Title() {
             <a>CONTACT//</a>
           </li>
           <li className="hover:text-blue-600 hover:bg-white pointer-events-auto w-full">
-            <a
-              href="https://www.instagram.com/daveteru"
-              
-            >
-              INSTAGRAM
-            </a>
+            <a href="https://www.instagram.com/daveteru">INSTAGRAM</a>
           </li>
           <li className="hover:text-blue-600 hover:bg-white pointer-events-auto w-full">
-            <a
-              href="https://wa.me/+6281285338235"
-             
-            >
-              WHATSAPP
-            </a>
+            <a href="https://wa.me/+6281285338235">WHATSAPP</a>
           </li>
           <li className="hover:text-blue-600 hover:bg-white pointer-events-auto w-full">
-            <a
-              href="https://github.com/daveteru"
-            >
-              GITHUB
-            </a>
+            <a href="https://github.com/daveteru">GITHUB</a>
           </li>
         </ul>
       </nav>

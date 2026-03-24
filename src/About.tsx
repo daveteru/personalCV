@@ -6,8 +6,8 @@ export default function About() {
           <hr></hr>01
         </p>
         <span className="w-full  md:w-[70%] text-7xl md:text-9xl font-extralight mb-4 ">ABOUT</span>
-        <div className="flex flex-col lg:flex-row gap-4">
-          <div className="flex flex-col items-end gap-3 mb-10">
+        <div className="flex flex-col lg:flex-row gap-10">
+          <div className="flex flex-col items-end gap-5 mb-10">
             <h1 className="uppercase max-w-[400px] min-w-[300px]">
               I design with intent and build with craft // visual designer
               turned engineer. Still obsessed with the details

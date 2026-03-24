@@ -21,9 +21,9 @@ export default function Portfolio() {
                 title={project.accordionTitle}
                 classNames={{
                   base: "!bg-transparent",
-                  trigger: "flex-row-reverse justify-end !bg-transparent",
+                  trigger: "flex-row-reverse justify-end !bg-transparent hover:bg-white/10 transition-colors",
                   title:
-                    "!flex-none text-right text-3xl md:text-5xl font-light font-[Inter] items-center my-3",
+                    "!flex-none text-right text-3xl md:text-5xl font-light font-[Inter] items-center my-3  hover:text-blue-500 transition-colors",
                   indicator: "data-[open=true]:rotate-270 transition-transform",
                 }}
               >
