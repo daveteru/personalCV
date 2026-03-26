@@ -47,16 +47,18 @@ export default function Title() {
         hidden ? "opacity-0" : "opacity-100"
       }`}
     >
-      <h1
-        className="text-6xl flex flex-wrap h-fit w-70 splittext "
-        ref={container}
-      >
-        DAVID TERU SUDIONO
-      </h1>
-      <p className="h-fit w-[300px] flex flex-wrap text-white">
-        INDEPENDENT UI DESIGNER & FULL STACK DEVELOPER SPECIALIZING IN
-        INTERACTIVE DIGITAL EXPERIENCES
-      </p>
+     <div ref={container} >
+        <h1
+          className="text-6xl flex flex-wrap h-fit w-70 splittext "
+          
+        >
+          DAVID TERU SUDIONO
+        </h1>
+        <p className="h-fit w-[300px] text-white splittext" >
+          DESIGN / UX ENGINEER SPECIALIZING IN
+          INTERACTIVE DIGITAL EXPERIENCES
+        </p>
+     </div>
       <nav className="mt-5 relative z-1 flex flex-col text-white">
         <a
           href="mailto:daveteru@gmail.com"
