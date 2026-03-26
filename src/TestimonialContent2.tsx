@@ -12,7 +12,9 @@ export default function TestimonialContent2() {
         were actually built."
       </p>
       <div className="flex flex-row items-center gap-4 mt-auto">
-        <div className="bg-red-50 w-12 h-12 rounded-full shrink-0"></div>
+        <div className="bg-red-50 w-12 h-12 rounded-full shrink-0 overflow-clip">
+          <img src="src/img/arayavute_professional_young_indonesian_female_teacher_in_a_sma_a0eddebb-5487-49da-87c2-28ee495108d5.webp" alt="" />
+        </div>
         <div className="flex flex-col text-left">
           <h1 className="font-bold text-base">ANDINI SETIAWATI</h1>
           <h2 className="text-[10px] text-gray-400">CREATIVE DIRECTOR · KREAVI STUDIO</h2>

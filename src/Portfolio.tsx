@@ -13,7 +13,7 @@ export default function Portfolio() {
       </section>
       <div>
         <div className="w-full ml-auto text-right flex justify-end text-white mb-10">
-          <Accordion selectionMode="multiple">
+          <Accordion selectionMode="single">
             {projects.map((project) => (
               <AccordionItem
                 key={project.id}

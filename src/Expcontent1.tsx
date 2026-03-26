@@ -8,7 +8,6 @@ export default function ExpContent({ company, period, description }: ExpContentP
   return (
     <div>
       <div className="w-full h-full border-[0.5px] rounded-2xl flex flex-col  p-8 items-start gap-5">
-        <div className="bg-red-50 w-25 h-25 rounded-full shrink-0"></div>
         <div className="flex flex-col text-left w-75">
           <h1 className="font-bold text-2xl">{company}</h1>
           <h2 className="text-[10px] mb-2">{period}</h2>

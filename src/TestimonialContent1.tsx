@@ -11,7 +11,9 @@ export default function TestimonialContent1() {
         collaborative and technically sharp people I've worked with."
       </p>
       <div className="flex flex-row items-center gap-4 mt-auto">
-        <div className="bg-red-50 w-12 h-12 rounded-full shrink-0"></div>
+        <div className="bg-red-50 w-12 h-12 rounded-full shrink-0 overflow-clip">
+          <img src="src/img/decledoo6675_Young_Asian_male_business_style_black_and_clean_gr_f290720c-e2c8-44ba-a861-bcaf4930b6ec.webp" alt="" />
+        </div>
         <div className="flex flex-col text-left">
           <h1 className="font-bold text-base">RIZKY ADIPUTRA</h1>
           <h2 className="text-[10px] text-gray-400">SENIOR PRODUCT MANAGER · GRAB INDONESIA</h2>
