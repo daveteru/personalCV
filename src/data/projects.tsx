@@ -21,7 +21,7 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   {
     id: "masshiro",
-    image:"src/img/2.webp",
+    image:"/2.webp",
     accordionTitle: (
       <>
         E-COMMERCE WEBSITE FOR{" "}
@@ -39,7 +39,7 @@ export const projects: ProjectData[] = [
   },
   {
     id: "arundaya",
-        image:"src/img/1.webp",
+        image:"/1.webp",
     accordionTitle: (
       <>
         <span className="font-[Cardo] italic">Pt.Arundaya</span> COMPANY
@@ -57,7 +57,7 @@ export const projects: ProjectData[] = [
   },
   {
     id: "grab",
-        image:"src/img/3.webp",
+        image:"/3.webp",
     accordionTitle: (
       <>
         INTERACTIVE USER ONBOARDING @{" "}
@@ -80,7 +80,7 @@ export const projects: ProjectData[] = [
   },
   {
     id: "globe",
-        image:"src/img/4.webp",
+        image:"/4.webp",
     accordionTitle: "DYNAMIC 3D GLOBE",
     title: "DYNAMIC 3D GLOBE",
     intro:
